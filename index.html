@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protección de PDF</title>
+    <title>Te quiero</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,19 +27,19 @@
 </head>
 <body>
     <div class="container">
-        <h2>Ingrese la contraseña para ver el PDF</h2>
+        <h2>Pon la contraseña</h2>
         <form id="passwordForm">
             <input type="password" id="password" placeholder="Contraseña" required>
             <button type="submit">Enviar</button>
         </form>
-        <p id="errorMessage" class="error" style="display:none;">Contraseña incorrecta. Inténtelo de nuevo.</p>
+        <p id="errorMessage" class="error" style="display:none;">Esa no es jiji.</p>
     </div>
     <script>
         document.getElementById('passwordForm').addEventListener('submit', function(event) {
             event.preventDefault();
             var password = document.getElementById('password').value;
-            if (password === 'password123') {
-                window.location.href = 'documento.pdf';
+            if (password === 'chiuauin') {
+                window.location.href = '17072023.pdf';
             } else {
                 document.getElementById('errorMessage').style.display = 'block';
             }
